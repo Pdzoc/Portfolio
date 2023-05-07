@@ -1,0 +1,145 @@
+html, body {
+    max-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background: #008080;
+}
+
+#angle-window {
+    max-width: 220px;
+    text-align: center;
+}
+
+#angle-window canvas {
+    background: grey;
+    border: 2px inset grey;
+}
+
+#angle-window table, tr,td {
+        border: 1px solid;
+}
+
+#angle-window input {
+    width: 5em;
+}
+    
+#angle-window table {
+    min-width: 200px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.window {
+    position: fixed;
+    margin-left: 90px;
+    top: 20px;
+    max-width: 700px;
+    width: 70%;
+}
+
+#sudoku-window {
+    position: fixed;
+    margin-left:10px;
+    top: 20px;
+    max-width: 400px;
+    width: 92%;
+}
+
+.cont {
+    background-color: white;
+    max-height: 85vh;
+    border: 1px inset white;
+    padding: 0px 5px;
+    overflow-y: auto;
+}
+
+.cont h4:first-of-type {
+    margin-top: 5px;
+}
+
+/* #box {
+    max-width: 300px;
+} */
+
+#box .cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box .icon {
+    margin: 10px;
+    width: 60px;
+}
+
+.icons {
+    position: fixed;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100vh;
+}
+
+.icon {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.icon p {
+    margin-top: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#projects ul {
+    padding-left: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li a {
+    margin-left: 7px;
+}
+
+#brick {
+    max-width: 400px;
+}
+
+#brick table {
+    background: none;
+    margin-top: 10px;
+}
+
+#brick table td {
+    padding-left: 3px;
+}
+
+input[type=color] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+input[type=color]::-webkit-color-swatch {
+    border: 1px inset white;
+  }
+
+input[type=color]::-moz-color-swatch {
+    border: 1px inset white;
+  }

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piotr Dzoć - Portfolio</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $(".window").draggable({ cancel: "td,.window-body,.cont,button" });
+    });
+  </script>
+  <link rel="stylesheet" href="./css/98.css">
+  <link rel="stylesheet" href="./css/numGame.css">
+  <link rel="stylesheet" href="./css/sudoku.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="icons">
+
+    <div class="icon" ondblclick="show(homeWindow)">
+      <img src="./icons/pcIcon.png" alt="">
+      <p>Home</p>
+    </div>
+
+    <div class="icon" ondblclick="show(projWindow)">
+      <img src="./icons/pro.png" alt="">
+      <p>Projects</p>
+    </div>
+
+    <div class="icon" ondblclick="show(boxWindow)">
+      <img src="./icons/boxIcon.png" alt="">
+      <p>My Case</p>
+    </div>
+
+    <div class="icon" ondblclick="show(contactWindow)">
+      <img src="./icons/contact.png" alt="">
+      <p>Contact</p>
+    </div>
+
+    <div class="icon" ondblclick="show(setWindow)">
+      <img src="./icons/set.png" alt="">
+      <p>Settings</p>
+    </div>
+
+  </div>
+
+  <div class="window" id="home">
+    <div class="title-bar">
+      <div class="title-bar-text">Home</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="cont">
+      <h4>Hello!</h4>
+      <p>My name is Piotr and I'm a code hobbyist from Poland.</p>
+      <p>I learn programming (front-end web development) since 2019, although I created my first site in 2007 (don't set
+        your expectations too high - I was a teenager). It was "Bractwo Żelaza" (English: Brotherhood of Iron) -
+        dedicated to the RPG Fallout series. I don't have these files, but you can still see it (unfortunately without
+        images) on a <a target="_blank"
+          href="https://web.archive.org/web/20080214134241/http://www.bractwozelaza.republika.pl:80/">Wayback
+          Machine</a>.</p>
+      <p>I prefer useful things, hence most of my projects include a "teaching" element. Mostly basic math and English,
+        because such projects were created for my nephews, but sometimes I wrote tools for myself and other users (e.g.
+        Word List).</p>
+      <p>My (exactly: my sister's) first computer had Windows 98, so I decided to relate to this style.</p>
+    </div>
+  </div>
+
+  <div class="hidden" id="projects">
+    <div class="title-bar">
+      <div class="title-bar-text">Projects</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="cont">
+      <h4>Tools</h4>
+      <ul>
+        <li>Word List <a target="_blank" href="https://github.com/Pdzoc/Word-list">GitHub</a>
+          <a target="_blank" href="https://pdzoc.github.io/Word-list/">Live</a>
+        </li>
+        <li>Vocabulary Trainer <a target="_blank" href="https://github.com/Pdzoc/Vocabulary-Trainer">GitHub</a><a
+            target="_blank" href="https://pdzoc.github.io/Vocabulary-Trainer/">Live</a></li>
+        <li>Models Collection <a target="_blank" href="https://github.com/Pdzoc/Models-Collection">GitHub</a><a
+            href="https://models-collection.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a></li>
+        <li>Minifigs Collection <a target="_blank" href="https://github.com/Pdzoc/Minifigs-Collection">GitHub</a> <a
+            href="http://rad-marigold-1c55dd.netlify.app" target="_blank" rel="noopener noreferrer">Live</a></li>
+        <li>Arc in canvas <a target="_blank" href="https://github.com/Pdzoc/Arc-in-canvas">GitHub</a><a
+            href="http://pdzoc.github.io/Arc-in-canvas/" target="_blank" rel="noopener noreferrer">Live</a> (see Angle
+          in My Case folder)</li>
+        <li>English Listening Game <a target="_blank" href="https://github.com/Pdzoc/English-Listening-Game">GitHub</a>
+          <a href="https://jolly-torte-35d746.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a>
+        </li>
+        <li>Codewars Katas List <a target="_blank" href="https://github.com/Pdzoc/Codewars-Katas-List">GitHub</a> <a
+            href="https://angular-ivy-naz7mw.stackblitz.io/" target="_blank" rel="noopener noreferrer">Live</a></li>
+        <li>Simple Brick Converter <a target="_blank" href="https://github.com/Pdzoc/Simple-Brick-Converter">GitHub</a>
+          <a target="_blank" href="https://pdzoc.github.io/Simple-Brick-Converter">Live</a> (available in My Case
+          folder)
+        </li>
+      </ul>
+      <h4>Websites</h4>
+      <ul>
+        <li>FixPro <a href="https://github.com/Pdzoc/FixPro" target="_blank" rel="noopener noreferrer">GitHub</a> <a href="http://pdzoc.github.io/FixPro/" target="_blank" rel="noopener noreferrer">Live</a></li>
+        <li>Welcome to the zone <a href="https://github.com/Pdzoc/Welcome-to-the-zone" target="_blank"
+            rel="noopener noreferrer">GitHub</a> <a href="http://pdzoc.github.io/Welcome-to-the-zone/" target="_blank"
+            rel="noopener noreferrer">Live</a></li>
+        <li>Skull Studio <a href="https://github.com/Pdzoc/Skull-Studio" target="_blank"
+            rel="noopener noreferrer">GitHub</a> <a href="http://pdzoc.github.io/Skull-Studio/" target="_blank"
+            rel="noopener noreferrer">Live</a></li>
+        <li>Western Movies Collection <a target="_blank"
+            href="https://github.com/Pdzoc/Western-Movies-Collection">GitHub</a> <a target="_blank"
+            href="https://pdzoc.github.io/Western-Movies-Collection/">Live</a></li>
+        <li>SKOC <a target="_blank" href="https://github.com/Pdzoc/SKOC">GitHub</a> <a target="_blank"
+            href="https://pdzoc.github.io/SKOC/">Live</a></li>
+      </ul>
+      <h4>Games</h4>
+      <ul>
+        <li>Lunar Buggy 3D <a target="_blank" href="https://github.com/Pdzoc/Lunar-Buggy-3D">GitHub</a> <a
+            target="_blank" href="https://pdzoc.github.io/Lunar-Buggy-3D/">Live</a></li>
+        <li>Program Lunar Jeep<a target="_blank" href="https://github.com/Pdzoc/Program-Lunar-Jeep">GitHub</a> <a
+            target="_blank" href="https://pdzoc.github.io/Program-Lunar-Jeep/">Live</a></li>
+        <li>Allotment 3D <a target="_blank" href="https://github.com/Pdzoc/Allotment3D">GitHub</a> <a target="_blank"
+            href="https://pdzoc.github.io/Allotment3D">Live</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hidden" id="box">
+    <div class="title-bar">
+      <div class="title-bar-text">My Case</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="cont">
+
+      <div class="icon" ondblclick="show(brickWindow)">
+        <img src="./icons/brick.png" alt="">
+        <p>Simple Brick Converter</p>
+      </div>
+
+      <div class="icon" ondblclick="show(numWindow)">
+        <img src="./icons/cup.png" alt="">
+        <p>Number Game</p>
+      </div>
+
+      <div class="icon" ondblclick="show(angleWindow)">
+        <img src="./icons/angle.png" alt="">
+        <p>Angle</p>
+      </div>
+
+      <div class="icon" ondblclick="show(sudokuWindow)">
+        <img src="./icons/sudoku.png" alt="">
+        <p>Sudoku</p>
+      </div>
+
+    </div>
+    <div class="status-bar">
+      <p class="status-bar-field">4 object(s)</p>
+    </div>
+  </div>
+
+  <div class="hidden" id="brick">
+    <div class="title-bar">
+      <div class="title-bar-text">Simple Brick Converter</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <input type="number" name="" id="amount" min="1">
+      <select id="unit">
+        <option value="mm">mm</option>
+        <option value="cm">cm</option>
+        <option value="m">m</option>
+        <option value="km">km</option>
+        <option value="stud">stud</option>
+        <option value="plate">plate</option>
+        <option value="brick">brick</option>
+        <option value="minifigure">minifigure</option>
+      </select>
+      <button onclick="calc()">Calculate</button>
+      <table></table>
+    </div>
+  </div>
+
+  <div class="hidden" id="numberGame">
+    <div class="title-bar">
+      <div class="title-bar-text">Number Game</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <aside style="font-size: 9em"></aside>
+      <article>
+        <button>&uarr;</button>
+        <button>==</button>
+        <button>&darr;</button>
+      </article>
+      <section id="num-section" class="hidden">
+        <h4 id="num-ans"></h4>
+        <button id="rstbtn">RESTART</button>
+      </section>
+    </div>
+    <div class="status-bar">
+      <p class="status-bar-field">First number is always 0. Is the current number greater than, less than or equal to
+        the previous number?</p>
+    </div>
+  </div>
+
+  <div class="hidden" id="angle-window">
+    <div class="title-bar">
+      <div class="title-bar-text">Angle 1.0</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <canvas width="200" height="200">
+      </canvas>
+      <div id="angl">
+        <label>Angle <input type="number" id="angle" min="1" max="360"></label>
+        <button id="comp">Compute</button>
+      </div>
+      <section id="angle-section"></section>
+    </div>
+  </div>
+
+  <div class="hidden" id="sudoku-window">
+    <div class="title-bar">
+      <div class="title-bar-text">Sudoku 1.0</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <article class="sudoku-board">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </article>
+      <select name="level" id="level">
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+      </select>
+      <button id="genSudoku">Generate</button>
+      <button id="checkSudoku">Check</button>
+      <p id="sudokuAns"></p>
+    </div>
+  </div>
+
+  <div class="hidden" id="contact">
+    <div class="title-bar">
+      <div class="title-bar-text">Contact</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="cont">
+      <ul>
+        <li>E-mail: <a href="mailto:piotrdz91@gmail.com">piotrdz91@gmail.com</a></li>
+        <li>GitHub: <a target="_blank" href="https://github.com/Pdzoc">Pdzoc</a></li>
+        <li>LinkedIn: <a target="_blank" href="https://pl.linkedin.com/in/piotr-dzo%C4%87">Piotr Dzoć</a></li>
+        <li>Codewars: <a target="_blank" href="https://www.codewars.com/users/Bunkierski">Bunkierski</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hidden" id="settings">
+    <div class="title-bar">
+      <div class="title-bar-text">Settings</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <p>We highly recommend using color: rgb(0, 128, 128)</p>
+      <div style="display: flex">
+        <label for="">Background Color</label>
+        <input type="color" name="" id="background-color" onchange="changeBckgr()">
+      </div>
+      <input type="checkbox" id="bigFont" onchange="handleFont()">
+      <label for="bigFont">Bigger Font</label>
+    </div>
+  </div>
+
+  <script src="./scripts/brick.js"></script>
+  <script src="./scripts/numGame.js"></script>
+  <script src="./scripts/angle.js"></script>
+  <script src="./scripts/sudokuScript.js"></script>
+  <script src="./scripts/sudoku.js"></script>
+  <script>
+    const homeWindow = document.querySelector('#home')
+    const projWindow = document.querySelector('#projects');
+
+    const boxWindow = document.querySelector('#box');
+    const brickWindow = document.querySelector('#brick');
+    const numWindow = document.querySelector('#numberGame');
+    const angleWindow = document.querySelector('#angle-window');
+    const sudokuWindow = document.querySelector('#sudoku-window');
+
+    const contactWindow = document.querySelector('#contact');
+    const setWindow = document.querySelector('#settings');
+    let biggerFont = false;
+    let big = `<link rel="stylesheet" href="./css/big.css">`
+
+    function show(element) {
+      let opened = document.querySelectorAll('.window');
+      if (opened.length) {
+        opened.forEach(el => {
+          el.setAttribute('style', 'z-index:1')
+        })
+      }
+      element.setAttribute('style', 'z-index:2')
+      element.setAttribute('class', "window")
+      $(function () {
+        $(".window").draggable({ cancel: "td,.window-body,.cont,button" });
+      });
+    }
+
+    function close() {
+      this.offsetParent.setAttribute('class', 'hidden')
+    }
+
+    [...document.querySelectorAll("[aria-label='Close']")].forEach(el => {
+      el.addEventListener('click', close)
+    })
+
+    function changeBckgr() {
+      document.body.style.background = document.getElementById('background-color').value
+    }
+
+    function handleFont() {
+      if (document.querySelector('#bigFont').checked) {
+        document.head.innerHTML += big;
+      }
+      else {
+        document.head.removeChild(document.head.lastChild)
+      }
+
+    }
+
+
+  </script>
+</body>
+
+</html>
